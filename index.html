@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css"/>
+  <title>CSS GRID</title>
+  <script src="/scripts/index.js" type="module"></script>
+</head>
+<body>
+ <div class="wrapper">
+  <header class="hero">
+    <nav><button class="menu-toggle--button" id="menu-toggler">&#9776;</button></nav>
+  </header>
+  <aside class="menu-drawer--aside">
+    <div class="menu-list--ul">
+      <h1 class="heart menu--item">&#128151;</h1>
+     <a href="https://github.com/chigboguorji" class="menu--item menu--link">chigboguorji</a>
+        <a href="https://github.com/chigboguorji/calculator.git" class="menu--link  menu--item">Repository</a>
+        <a href="https://twitter.com/chigboguorji" class="menu--link  menu--item">Twitter</a>
+    </div>
+  </aside>
+  <main class="main-page">
+  <div class="grid-container">
+    <input type="text" class="grid-item" id="result" readonly value="0" data-id="result"/>
+    <input type="text" class="grid-item" id="cal-result" readonly value="0" data-id="cal-result"/>
+    <button class="btn" data-id="C">C</button>
+    <button class="btn" data-id="CE">CE</button>
+    <button class="btn operator" data-value="%">%</button>
+    <button class="btn operator" data-value="/">/</button>
+    <button class="btn int" data-value="7">7</button>
+    <button class="btn int" data-value="8">8</button>
+    <button class="btn int" data-value="9">9</button>
+    <button class="btn operator" data-value="*">*</button>
+    <button class="btn int" data-value="4">4</button>
+    <button class="btn int" data-value="5">5</button>
+    <button class="btn int" data-value="6">6</button>
+    <button class="btn operator" data-value="-">-</button>
+    <button class="btn int" data-value="1">1</button>
+    <button class="btn int" data-value="2">2</button>
+    <button class="btn int" data-value="3">3</button>
+    <button class="btn operator" data-value="+">+</button>
+    <button class="btn int" id="zero" data-value="0">0</button>
+    <button class="btn int" id="dot" data-value=".">.</button>
+    <button class="btn" id="equals" data-id="equals">=</button>
+  </div>
+</main>
+ </div>
+</body>
+</html>
