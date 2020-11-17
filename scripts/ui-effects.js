@@ -6,7 +6,12 @@ export const elems = {
   ops : document.querySelectorAll('.operator'),
   equals : document.getElementById('equals'),
   accUI : document.getElementById('cal-result'),
-  result : document.getElementById('result')
+  result: document.getElementById('result'),
+  clearBtn: document.querySelectorAll('.clear')
+}
+
+export const setElemValue = (target, value) => {
+  target.value = value
 }
 
 const menuToggler = document.querySelector('#menu-toggler')
